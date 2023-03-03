@@ -1,0 +1,116 @@
+.main {
+  background-color: #0c0d0d;
+  padding-bottom: 1em;
+}
+
+iframe {
+  width: 100%;
+  height: 30em;
+  animation: fadeInMoveRight 3s;
+}
+
+h1 {
+  animation: fadeInMoveRight 2s;
+}
+
+.mainImage {
+  display: block;
+  margin: auto;
+}
+
+.presentacion {
+  color: orange;
+  text-align: center;
+  margin-top: 3em;
+}
+
+.container {
+  position: static;
+  width: 320px;
+  margin: 10em auto 0 auto;
+  perspective: 900px;
+  padding-bottom: 300px;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+}
+.carousel__face {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
+  background-size: cover;
+  box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+  display: flex;
+}
+
+span {
+  margin: auto;
+  font-size: 2rem;
+}
+
+
+.carousel__face:nth-child(1) {
+  background-image: url("src/assets/working2.PNG");
+  transform: rotateY(  0deg) translateZ(430px); }
+.carousel__face:nth-child(2) {
+  background-image: url("src/assets/working3.PNG");
+  transform: rotateY( 40deg) translateZ(430px); }
+.carousel__face:nth-child(3) {
+  background-image: url("src/assets/working5.PNG");
+  transform: rotateY( 80deg) translateZ(430px); }
+.carousel__face:nth-child(4) {
+  background-image: url("src/assets/working6.PNG");
+  transform: rotateY(120deg) translateZ(430px); }
+.carousel__face:nth-child(5) {
+  background-image: url("src/assets/working7.PNG");
+  transform: rotateY(160deg) translateZ(430px); }
+.carousel__face:nth-child(6) {
+  background-image: url("src/assets/working8.PNG");
+  transform: rotateY(200deg) translateZ(430px); }
+.carousel__face:nth-child(7) {
+  background-image: url("src/assets/working9.PNG");
+  transform: rotateY(240deg) translateZ(430px); }
+.carousel__face:nth-child(8) {
+  background-image: url("src/assets/working10.PNG");
+  transform: rotateY(280deg) translateZ(430px); }
+.carousel__face:nth-child(9) {
+  background-image: url("src/assets/working11.PNG");
+  transform: rotateY(320deg) translateZ(430px); }
+
+
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+@keyframes fadeInMoveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-60%);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,51 @@
+.eventos {
+  background-color: #0c0d0d;
+  text-align: center;
+}
+
+.cardImages {
+  margin-top: 3em;
+  margin-bottom: 2em;
+  animation: fadeInMoveRight 2s;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+h1 {
+  color: orange;
+  padding-top: 1em;
+  animation: fadeInMoveRight 2s;
+}
+
+h2 {
+  color: orange;
+  animation: fadeInMoveRight 1s;
+  margin-bottom: 4em;
+}
+
+@keyframes fadeInMoveRight {
+  0% {
+    transform: translateX(-60%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  20%,50%,80%,to{
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+
+
